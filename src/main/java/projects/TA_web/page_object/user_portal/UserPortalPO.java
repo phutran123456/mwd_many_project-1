@@ -30,7 +30,7 @@ public class UserPortalPO {
     public WebElement spanGoToAdminPage;
     @FindBy(xpath = "//header//button//*[name()='svg' and @data-testid='ArrowDropDownIcon']")
     public WebElement svgAccountMenu;
-    @FindBy(xpath = "//a[text()='Change Password']")
+    @FindBy(xpath = "//li[text()='Change Password']")
     public WebElement aChangePw;
     @FindBy(xpath = "//a[text()='Logout']")
     public WebElement aLogout;

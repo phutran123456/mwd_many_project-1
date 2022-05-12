@@ -103,7 +103,7 @@ public class DataTestSSO {
     public String error_msg_same_pw = "Your new password is same as your old password. Please use another password.";
     public String success_msg = "Success!";
     public String error_msg_confirm_pw = "Confirm password value must be the same password.";
-    public String error_msg_current_pw_wrong = "Your current password cannot match.";
+    public String error_msg_current_pw_wrong = "Your current password cannot match";
 
     // Reminder page
     public String textContent = "To verify your identity, a security code has been sent to you. Please check the link in the email or coppy and pass the security code here:";
@@ -120,12 +120,13 @@ public class DataTestSSO {
     public String valid_email_1 = "testlogigear@logigear.com";
     public String valid_email_2 = "activated.qatesting@gmail.com";
     public String email_white_space_at_begining_and_ending = "      activated.qatesting@gmail.com      ";
-
+    public String existed_email = "phu.tran@logigear.com";
     // email error message
+    public String error_msg_existed_email_portal = "phu.tran@logigear.com is existed";
     public String error_msg_existed_email = "Email existed in database";
     public String error_msg_invalid_email = "Please enter a valid email.";
     public String error_msg_email_no_existing_in_database = "Email not existing in database.";
-
+    public String error_msg_email_portal= "Please enter valid emails. Use the basic format local-part@hostname";
     // attached file error message
     public String error_msg_huge_size = "File size must be < 5MB.";
     public String error_msg_wrong_file_type = "The file must be a file of type: jpeg, jpg, png";

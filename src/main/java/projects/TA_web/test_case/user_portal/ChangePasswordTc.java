@@ -41,7 +41,7 @@ public class ChangePasswordTc extends BaseTest {
      *  + The form title and all label fields: Password, New password, Confirm password
      *  + All buttons: Submit, Cancel
      */
-    @Test(priority = 1, enabled = false,
+    @Test(priority = 1, enabled = true,
             testName = "Test case 01: Verify the UI items on the page 'Change password'",
             description = "Verify all UI item's text show on the page")
     public void TC01_Verify_the_UI_items_on_the_page_Change_password(){
@@ -117,7 +117,7 @@ public class ChangePasswordTc extends BaseTest {
      *  + Select the button 'Submit'
      * 5. Verify error messages and icons 'Warning' display on 3 fields 'Password', 'New password', 'Confirm password'
      */
-    @Test(priority = 2, enabled = false,
+    @Test(priority = 2, enabled = true,
             testName = "Test case 02 : Verify error messages display when submitting without entering values",
             description = "Description: Verify the error messages and icon 'Warning' appear when update password without values",
             dataProviderClass = DataTestTAWeb.class,
@@ -214,7 +214,7 @@ public class ChangePasswordTc extends BaseTest {
      *      - Only the error message and icon 'Warning' of the field 'New password' shows on
      *      - the error message and icon 'Warning' of the field 'Confirm password' hide
      */
-    @Test(priority = 3,
+    @Test(priority = 3,enabled = true,
             testName = "Test case 03 : Verify error messages for the field 'New password' display without submitting",
             description = "Description: Verify the error messages and icon 'Warning' for field 'New password' display " +
                     "and in contrast with the field 'Confirm Password', and values to both fields 'New password' and 'Confirm password' are same",
@@ -300,7 +300,7 @@ public class ChangePasswordTc extends BaseTest {
      *      The error message appear inform the current password are wrong
      *      All error message for all field still hide
      */
-    @Test(priority = 4, enabled = false,
+    @Test(priority = 4, enabled = true,
             testName = "Test case 04 : Verify error messages appear after submitting with valid values",
             description = "Description: The corresponding error message appear when submitting with 3 fields are same or current password is wrong",
             dataProviderClass = DataTestTAWeb.class,
@@ -378,7 +378,7 @@ public class ChangePasswordTc extends BaseTest {
      *  + Enter valid values to to all fields,
      *      - Expected: No error messages and icons 'Warning' appear
      */
-    @Test(priority = 5, enabled = false,
+    @Test(priority = 5, enabled = true,
             testName = "Test case 05 : Verify error messages do not display when entering valid values to all fields",
             description = "Description: No error message and icon 'Warning' display when entering valid values to all fields",
             dataProviderClass = DataTestTAWeb.class,
@@ -459,7 +459,7 @@ public class ChangePasswordTc extends BaseTest {
      *  + Enter valid values to to all fields,
      *      - Expected: No error messages and icons 'Warning' appear
      */
-    @Test(priority = 6, enabled = false,
+    @Test(priority = 6, enabled = true,
             testName = "Test case 06 : Verify error message for the field 'Confirm new password' display when values for both fields 'New password', 'Confirm new password' difference",
             description = "Description: No error message and icon 'Warning' display when entering valid values to all fields",
             dataProviderClass = DataTestTAWeb.class,
@@ -535,7 +535,7 @@ public class ChangePasswordTc extends BaseTest {
      *  + Enter valid values to the field 'New password', 'Confirm new password' that they are as the same
      * 5. Verify the success message display after updating password successfully
      */
-    @Test(priority = 7, enabled = false,
+    @Test(priority = 7, enabled = true,
             testName = "Test case 07 : Verify successful message display when change password successful",
             description = "Description: The successful message display after changing password successful with valid values",
             dataProviderClass = DataTestTAWeb.class,

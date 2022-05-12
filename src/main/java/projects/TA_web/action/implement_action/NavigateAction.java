@@ -22,15 +22,19 @@ public class NavigateAction implements INavigateAction {
     }
 
     @Override
-    public void goToChangePasswordPage(WebDriver webDriver, UserPortalPO userPortalPO) {
+    public void goToChangePasswordPage(WebDriver webDriver, UserPortalPO userPortalPO)  {
+
         userPortalPO.svgAccountMenu.click();
         userPortalPO.aChangePw.click();
+
+
     }
 
     @Override
     public void goToLoginPage(WebDriver webDriver) {
         webDriver.get(URL.portalTaOnLocal23);
     }
+
 
     @Override
     public void goToAddCouponTypePage(WebDriver webDriver) {

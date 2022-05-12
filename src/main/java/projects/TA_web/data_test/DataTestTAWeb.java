@@ -427,6 +427,41 @@ public class DataTestTAWeb extends DataTestSSO {
         data [0][2]=error_msg_existed_page_AddCoupon;
         return data;
     }
+    @DataProvider
+    public Object[][] getDataToFieldEmail() {
+        Object[][] data = new Object[10][2];
+        // row 1, letter '#' instead of '@'
+        data[0][0] = email_missing_symbol;
+        data[0][1] = error_msg_email_portal;
+        // row 2, email without domain name
+        data[1][0] = email_missing_domainName;
+        data[1][1] = error_msg_email_portal;
+        // row 3, email without user name
+        data[2][0] = email_username_is_missing;
+        data[2][1] = error_msg_email_portal;
+        // row 4, email has many letter '@'
+        data[3][0] = email_many_symbol;
+        data[3][1] = error_msg_email_portal;
+        // row 5, email without user name and letter '@'
+        data[4][0] = email_miss_username_and_symbol;
+        data[4][1] = error_msg_email_portal;
+        // row 6, email without organization name
+        data[5][0] = emailDomain_only_has_dotcom;
+        data[5][1] = error_msg_email_portal;
+        // row 7, email without letter '.' and other behind letters
+        data[6][0] = email_miss_dot_com;
+        data[6][1] = error_msg_email_portal;
+        // row 8, email has letter white space into user name
+        data[7][0] = emailName_contain_white_space;
+        data[7][1] = error_msg_email_portal;
+        // row 9, email has letter white space into domain name
+        data[8][0] = emailDomain_contain_white_space;
+        data[8][1] = error_msg_email_portal;
+        // row 10, email has letter white space into domain name
+        data[8][0] = existed_email;
+        data[8][1] = error_msg_existed_email_portal;
+        return data;
+    }
 
 
 }

@@ -34,7 +34,9 @@ public class EditProfileAction implements IEditProfileAction {
     }
 
     @Override
-    public void UpdateFields(EditProfilePO editProfilePO, String textInput) {
+    public void UpdateFields(EditProfilePO editProfilePO, String textInput)throws InterruptedException {
+        SSOUtilImpA ssoUtilImpA = new SSOUtilImpA();
+        ssoUtilImpA.setThreadSleep(5000);
         editProfilePO.inputFirstName.clear();
         editProfilePO.inputFirstName.sendKeys(textInput);
         editProfilePO.inputLastName.clear();

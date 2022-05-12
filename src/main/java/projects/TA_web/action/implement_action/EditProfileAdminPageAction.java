@@ -23,6 +23,7 @@ public class EditProfileAdminPageAction implements IEditProfileAction {
         editProfilePO.inputLastName.clear();
         editProfilePO.inputLastName.sendKeys(textInput);
         editProfilePO.labelCompany.click();
+
     }
 
     @Override

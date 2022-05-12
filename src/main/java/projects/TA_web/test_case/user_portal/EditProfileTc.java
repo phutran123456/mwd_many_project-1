@@ -9,6 +9,7 @@ import common.LogReport;
 import common.SSOUtilImpA;
 import general_action.IGeneralAction;
 import general_action.implement.GeneralAction;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import projects.TA_web.action.IEditProfileAction;
 import projects.TA_web.action.ILoginAction;
@@ -79,7 +80,7 @@ public class EditProfileTc extends BaseTest {
 
 
     }
-    @Test(priority = 2,dataProviderClass = DataTestSSO.class,enabled = false,
+    @Test(priority = 2,dataProviderClass = DataTestSSO.class,enabled = true,
     dataProvider = "getDataForFieldNameUpdateProfilePage",
     testName = "Verify Error message on field first name and last name",
     description = "Verify Error message on field first name and last name")
@@ -90,6 +91,7 @@ public class EditProfileTc extends BaseTest {
         LoginOn23ServerPO loginOn23ServerPO = new LoginOn23ServerPO(Constant.webDriver);
         UserPortalPO userPortalPO = new UserPortalPO(Constant.webDriver);
         IEditProfileAction editProfileAction = new EditProfileAction();
+
         EditProfilePO editProfilePO = new EditProfilePO(Constant.webDriver);
         DataTestTAWeb dataTestTAWeb = new DataTestTAWeb();
         IGeneralAction generalAction = new GeneralAction();
@@ -116,28 +118,32 @@ public class EditProfileTc extends BaseTest {
 
         LogReport.logMainStep("5. Input data on the page 'Edit Profile User Page'");
         LogReport.logSubStep("Input values"+ textName);
+
         editProfileAction.UpdateFields(editProfilePO,textName);
 
         LogReport.logMainStep("6. Verify the error message display appropriate");
-        if (errorMsg.equals("")){
-            generalAction.verifyTextDisplay(textDisplay,editProfilePO.inputFirstName,true);
-            generalAction.verifyTextDisplay(textDisplay,editProfilePO.inputLastName,true);
-        }else {
+        if (!errorMsg.equals(""))
+        {
             generalAction.verifyTextDisplay(errorMsg,editProfilePO.labelErrorMsgFirstName,false);
             generalAction.verifyTextDisplay(errorMsg,editProfilePO.labelErrorMsgLastName,false);
 
         }
+        else
+        {
+            generalAction.verifyTextDisplay(textDisplay,editProfilePO.inputFirstName,true);
+            generalAction.verifyTextDisplay(textDisplay,editProfilePO.inputLastName,true);
+        }
 
     }
-    catch (Exception exception){
-        LogReport.logErrorAndCaptureBase64(ExtentReportManager.extentTest, SSOUtilImpA.stepName,
-                Constant.webDriver.getCurrentUrl(), exception);
+     catch (Exception exception){
+      LogReport.logErrorAndCaptureBase64(ExtentReportManager.extentTest, SSOUtilImpA.stepName,
+               Constant.webDriver.getCurrentUrl(), exception);
                 exception.printStackTrace();
         }
     }
 
     @Test(priority = 3,
-            testName = "Verify upload avatar",
+            testName = "Verify upload avatar",enabled = true,
             description = "Verify upload avatar")
     public void TC_3_Verify_UploadAvatar(){
         System.out.println("Test case 03: Verify upload avatar");

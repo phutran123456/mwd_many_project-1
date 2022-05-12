@@ -23,16 +23,16 @@ public class BaseTest {
     public void setBeforeSuite() {
         System.out.println("setBeforeSuite");
     }
-
-    @BeforeTest
     @Parameters({"myBrowser"})
+    @BeforeTest
+
     public void setBeforeTest(Method method, String myBrowser) {
         System.out.println("setBeforeTest");
         BaseTest.browserName = myBrowser;
         try {
             switch (myBrowser) {
                 case "chrome":
-                    System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", "E:\\webdriver\\chromedriver.exe");
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
