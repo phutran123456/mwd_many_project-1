@@ -429,7 +429,7 @@ public class DataTestTAWeb extends DataTestSSO {
     }
     @DataProvider
     public Object[][] getDataToFieldEmail() {
-        Object[][] data = new Object[10][2];
+        Object[][] data = new Object[11][2];
         // row 1, letter '#' instead of '@'
         data[0][0] = email_missing_symbol;
         data[0][1] = error_msg_email_portal;
@@ -458,8 +458,11 @@ public class DataTestTAWeb extends DataTestSSO {
         data[8][0] = emailDomain_contain_white_space;
         data[8][1] = error_msg_email_portal;
         // row 10, email has letter white space into domain name
-        data[8][0] = existed_email;
-        data[8][1] = error_msg_existed_email_portal;
+        data[9][0] = existed_email;
+        data[9][1] = error_msg_existed_email_portal;
+        // row 11, email has letter white space into domain name
+        data[10][0] = email_white_space_at_begining_and_ending;
+        data[10][1] = "activated.qatesting@gmail.com";
         return data;
     }
 

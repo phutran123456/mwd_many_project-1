@@ -33,7 +33,7 @@ public class EditProfileAdminPageTC extends BaseTest {
      *
      *
      * */
-    @Test(priority = 1,enabled = false,
+    @Test(priority = 1,enabled = true,
             testName = "Verify GUI after load page successfully",
             description = "Verify GUI after load page successfully"
     )
@@ -87,7 +87,7 @@ public class EditProfileAdminPageTC extends BaseTest {
 
     }
 
-    @Test(priority = 2,dataProviderClass = DataTestSSO.class,enabled = false,
+    @Test(priority = 2,dataProviderClass = DataTestSSO.class,enabled = true,
             dataProvider = "getDataForFieldNameUpdateProfilePage",
             testName = "Verify Error message on field first name and last name",
             description = "Verify Error message on field first name and last name")
@@ -148,7 +148,7 @@ public class EditProfileAdminPageTC extends BaseTest {
     }
 
 
-    @Test(priority = 3,
+    @Test(priority = 3,enabled = true,
             testName = "Verify error message on phone field",
             description = "Verify error message on phone field",
             dataProvider = "getDataForFieldPhone",

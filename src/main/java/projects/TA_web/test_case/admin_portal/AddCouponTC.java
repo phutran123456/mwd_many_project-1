@@ -42,7 +42,7 @@ public class AddCouponTC extends BaseTest {
      *  + Verify all input fields, selection fields: Name, Type, Value, Unit name, Point, Duration, Unit name, Status, Presentee
      *  + Verify all button names: Save, Cancel
      */
-    @Test(priority = 1,enabled = false,
+    @Test(priority = 1,enabled = true,
             testName = "Test case 1: Verify the UI items on the page 'Add coupon'",
             description = "Description: Verify the UI items display fully on the page 'Add coupon'")
     public void TC01_Verify_GUI(){
@@ -110,7 +110,7 @@ public class AddCouponTC extends BaseTest {
      * 5. Verify the error messages and icon 'Warning' for an empty field appears fully on all required fields
      */
 
-    @Test(priority = 2,enabled = false,
+    @Test(priority = 2,enabled = true,
             testName = "Verify the error messages for empty fields appear fully after " +
             "creating a new coupon without any values",
             description = "erify the error messages for empty fields appear fully after creating " +
@@ -197,7 +197,7 @@ public class AddCouponTC extends BaseTest {
      *      - Verify the error message and icon 'Warning' for this field  still hide
      */
 
-    @Test(priority = 3,enabled = false,
+    @Test(priority = 3,enabled = true,
             testName = "Verify the error message displays appropriate on the field 'Name*",
             description = "Verify the error message displays appropriate on the field 'Name*",
             dataProviderClass = DataTestTAWeb.class,
@@ -273,7 +273,7 @@ public class AddCouponTC extends BaseTest {
      *  + Select the button 'Save'
      * 5. Verify the error message that it appears to reminder the coupon is existed
      */
-    @Test (priority = 4,
+    @Test (priority = 4,enabled = true,
             testName = "Verify the error message appears, if the user updates the current coupon" +
                     " that it is the same name to another coupon",
             description = "Verify the error message appears, if the user updates the current coupon" +

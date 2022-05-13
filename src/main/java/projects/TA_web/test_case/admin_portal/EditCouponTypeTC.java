@@ -49,7 +49,7 @@ public class EditCouponTypeTC extends BaseTest {
      *  + All button: 'Save', 'Cancel', 'Upload image'
      * 5. Verify all coupon type values display fully on the page 'Edit coupon type
      */
-    @Test(priority = 1, enabled = false,
+    @Test(priority = 1, enabled = true,
             testName = "Test case 1: Verify all UI items display fully on the form 'Edit '",
             description = "Description: Verify all UI item show on the form 'Add'")
     public void TC01_Verify_all_UI_items_display_fully_on_the_form_Add(){
@@ -139,7 +139,7 @@ public class EditCouponTypeTC extends BaseTest {
      *  + Enter texts consist special character to these field, eg: "Test #.,{}'" and press Enter
      *      -> Expected result: The error message: 'Please remove special characters.' displays
      */
-    @Test(priority = 2, enabled = false,
+    @Test(priority = 2, enabled = true,
             testName = "Test case 2: Verify error message display proper for the field 'Name' on the form 'Edit coupon type'",
             description = "Description: Verify the error message and icon 'Warning' for the field 'Name' appear proper",
             dataProviderClass = DataTestTAWeb.class,
@@ -224,7 +224,7 @@ public class EditCouponTypeTC extends BaseTest {
      *  + Enter Unicode text to these fields
      *      -> Verify no text displaying
      */
-    @Test(priority = 3, enabled = false,
+    @Test(priority = 3, enabled = true,
             testName = "Test case 3: Verify error message display proper for the field 'Limit' on the form 'Edit coupon type'",
             description = "Description: Verify the error message and icon 'Warning' for the field 'Limit' appear properly",
             dataProviderClass = DataTestTAWeb.class,
@@ -302,7 +302,7 @@ public class EditCouponTypeTC extends BaseTest {
      *  + Select the button 'Cancel'
      *  + Verify the title page 'Manage coupon type' displays
      */
-    @Test(priority = 4, enabled = false,
+    @Test(priority = 4, enabled = true,
             testName = "Test case 4: Verify error message display on the form 'Edit coupon type' when submitting the name being already in use",
             description = "Description: Verify the error message display when submitting the name being already in use")
     public void TC04_Verify_error_message_display_proper_for_the_field_Limit(){

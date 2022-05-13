@@ -46,7 +46,7 @@ public class AddCouponTypeTC extends BaseTest {
      *  + All input and select fields: 'Name', 'Limit', 'Status', 'Upload image'
      *  + All button: 'Save', 'Cancel'
      */
-    @Test(priority = 1, enabled = false,
+    @Test(priority = 1, enabled = true,
             testName = "Test case 1: Verify all UI items display fully on the form 'Add '",
             description = "Description: Verify all UI item show on the form 'Add'")
     public void TC01_Verify_all_UI_items_display_fully_on_the_form_Add(){
@@ -132,7 +132,7 @@ public class AddCouponTypeTC extends BaseTest {
      *      - Verify texts displaying on these fields are unchanged
      *      - Verify the error message and icon 'Warning' for this field does not display
      */
-    @Test(priority = 2, enabled = false,
+    @Test(priority = 2, enabled = true,
             testName = "Test case 2: Verify error message display proper for the field 'Name'",
             description = "Description: Verify the error message and icon 'Warning' for the field 'Name' appear inappropriate",
             dataProviderClass = DataTestTAWeb.class,
@@ -218,7 +218,7 @@ public class AddCouponTypeTC extends BaseTest {
      *      - Verify only numbers display
      *      - verify the error message and icon 'Warning' disappear
      */
-    @Test(priority = 3, enabled = false,
+    @Test(priority = 3, enabled = true,
             testName = "Test case 3: Verify error message display proper for the field 'Limit'",
             description = "Description: Verify the error message and icon 'Warning' for the field 'Limit' appear appropriate",
             dataProviderClass = DataTestTAWeb.class,
@@ -292,7 +292,7 @@ public class AddCouponTypeTC extends BaseTest {
      *  + Select the button 'Save'
      * 5. Verify the error message display
      */
-    @Test(priority = 4, enabled = false,
+    @Test(priority = 4, enabled = true,
             testName = "Test case 4: Verify error message display when submitting the name being already in use",
             description = "Description: Verify the error message display when submitting the name being already in use")
     public void TC04_Verify_error_message_display_when_submitting_the_name_being_already_in_use(){
@@ -369,7 +369,7 @@ public class AddCouponTypeTC extends BaseTest {
      *  + Select the button 'Save'
      * 5. Verify the success message display
      */
-    @Test(priority = 5, enabled = false,
+    @Test(priority = 5, enabled = true,
             testName = "Test case 5: Verify the successful message display after submitting successful",
             description = "Description: Verify the successful message display after submitting successful",
             dataProviderClass = DataTestTAWeb.class,
@@ -449,7 +449,7 @@ public class AddCouponTypeTC extends BaseTest {
      *  + Select the button 'Save'
      * 5. Verify all error messages and icon 'Warning' for empty fields display
      */
-    @Test(priority = 6, enabled = false,
+    @Test(priority = 6, enabled = true,
             testName = "Test case 6: Verify the error messages displays when the user enters nothing values to all fields",
             description = "Description: Verify the error messages display under all required fields after selecting the button 'Save'")
     public void TC06_Verify_the_error_messages_displays_when_the_user_enters_nothing_values_to_all_fields(){

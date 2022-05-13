@@ -17,15 +17,18 @@
 <!--            <class name="SSO_admin_portal.test_case.AddUserTc"/>-->
 <!--            <class name="SSO_admin_portal.temp2"/>-->
 <!--            <class name="projects.Pre_Test_Sele_2.test_case.SearchingResultTc"/>-->
-<!--            <class name="projects.TA_web.test_case.user_portal.ChangePasswordTc"/>-->
-            <class name="projects.TA_web.test_case.user_portal.EmailReferral"/>
-                       <!--          <class name="projects.TA_web.test_case.admin_portal.AddCouponTypeTC"/>-->
-           <!--            <class name="projects.TA_web.test_case.admin_portal.EditCouponTypeTC"/>-->
-            <!--             <class name="projects.TA_web.test_case.admin_portal.DeleteCouponTypeTc"/>-->
+<!--            <class name="projects.TA_web.test_case.admin_portal.EditProfileAdminPageTC"/>-->
+           <class name="projects.TA_web.test_case.user_portal.EmailReferral"/>
+<!--            <class name="projects.TA_web.test_case.admin_portal.AddCouponTypeTC"/>-->
+<!--            <class name="projects.TA_web.test_case.admin_portal.EditCouponTypeTC"/>-->
+<!--            <class name="projects.TA_web.test_case.admin_portal.DeleteCouponTypeTc"/>-->
+                    <!--    <class name="projects.TA_web.test_case.admin_portal.AddCouponTC"/>
+                        <class name="projects.TA_web.test_case.admin_portal.EditCouponTc"/>-->
 
-                    </classes>
-                </test>
-            </suite>
+
+                                </classes>
+                            </test>
+                        </suite>
 
 
 

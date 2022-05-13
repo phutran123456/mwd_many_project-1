@@ -45,7 +45,7 @@ public class DeleteCouponTypeTc extends BaseTest {
      *  + Select the button 'Cancel' on the dialog
      *  + Verify the dialog disappear
      */
-    @Test(priority = 1, enabled = false,
+    @Test(priority = 1, enabled = true,
             testName = "Test case 1: Verify UI items on the 'Delete' dialog",
             description = "Description: Verify all UI item show on the dialog 'Delete'")
     public void TC01_UI_items_on_the_Delete_dialog(){

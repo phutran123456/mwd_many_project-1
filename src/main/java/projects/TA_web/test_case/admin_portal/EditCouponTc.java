@@ -36,7 +36,7 @@ public class EditCouponTc extends BaseTest {
      *  + Verify all button names: Save, Cancel
      * 5. Verify all values that they are displaying on all fields of the coupon at step 3
      */
-@Test(priority = 1,enabled = false,
+@Test(priority = 1,enabled = true,
         testName = "Verify the UI items on the page 'Edit coupon",
         description = "Verify GUI after load page successfully"
 
@@ -106,7 +106,7 @@ public class EditCouponTc extends BaseTest {
      *  + Select the button 'Save'
      * 5. Verify the error messages and icon 'Warning' for an empty field appears fully on all required input fields
      */
-    @Test(priority = 2,
+    @Test(priority = 2,enabled = true,
             testName = "Verify the error messages for empty fields appear after the user updates a coupon with empty value",
             description = "Verify the error messages for empty fields appear after the user updates a coupon with empty value"   )
 
@@ -194,7 +194,7 @@ public class EditCouponTc extends BaseTest {
      *      - Verify texts displaying on these fields are unchanged
      *      - Verify the error message and icon 'Warning' for this field  still hide
      */
-    @Test(priority = 3,enabled = false,
+    @Test(priority = 3,enabled = true,
             testName = "Verify the error message displays appropriate on the field 'Name*",
             description = "Verify the error message displays appropriate on the field 'Name*",
             dataProviderClass = DataTestTAWeb.class,
@@ -268,7 +268,7 @@ public class EditCouponTc extends BaseTest {
      *  + Select the button 'Save'
      * 5. Verify the error message that it appears to reminder the coupon is existed
      */
-    @Test (priority = 4,enabled = false,
+    @Test (priority = 4,enabled = true,
             testName = "Verify the error message appears, if the user updates the current coupon that it is the same to another coupon",
             description = "Verify the error message appears, if the user updates the current coupon that it is the same to another coupon"
             )
